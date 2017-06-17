@@ -1,0 +1,110 @@
+\input{Header}	
+					
+\title{Data Warehousing Projekt}
+\subtitle{Analyse, Entwurf und Auswertung}
+
+\author{Matthias Zober und Enrico Wüstenberg\vspace{5cm}}
+\date{\today}
+\begin{document}
+
+\maketitle
+\tableofcontents
+\thispagestyle{empty}
+\pagebreak
+\setcounter{page}{1}
+
+\section{Phase 1: Analyse}
+
+\subsection{Beschreibung möglicher Anwendungen aus Business-Sicht}
+\label{ref:businessSicht}
+Im folgenden werden die einzelnen Perspektiven: Finanzperspektive, Kundenperspektive, Interne Perspektive und Entwicklungsperspektive vorgestellt.
+
+\begin{table}[h]
+\textbf{Finanzperspektive}
+\begin{center}
+  \begin{tabular}{ | l | r | }
+    \hline
+    \textbf{Ziel} & \textbf{Kennzahl} \\ \hline
+    Einnahmen aller Artikel mit Bestelldaten & Umsatz Allgemein (Jahr, Monat) \\ \hline
+    Rentabilität der Kunden & Anzahl Bestellungen pro Kunde \\
+    \hline
+    Welche Artikel verkaufen sich am besten? & Verkaufsanzahl (Quantität, zeitlich) \\
+    \hline
+    Überblick über ausstehende Einnahmen  & Ausstehende Einnahmen,  Liquidität  \\
+    \hline
+     Kreditverteilung der Kunden & Geburtsdatum, Kredit, Wohnort \\
+    \hline
+  \end{tabular}
+\end{center}
+\caption{Finanzperspektive}
+\label{table:tableFinanz}
+\end{table}
+
+\begin{table}[h]
+\textbf{Kundenperspektive}
+\begin{center}
+  \begin{tabular}{ | l | r | }
+    \hline
+    \textbf{Ziel} & \textbf{Kennzahl} \\ \hline
+    Überblick über die Anzahl der Reklamationen & Reklamationsanzahl \\ \hline
+    Anzahl der verkauften Artikel mit Bestelldatum & Bestseller, Jahreszeit \\
+    \hline
+    Artikel mit Retouren und Grund  & Kundenzufriedenheit \\ \hline
+    Einfluss der Körpergröße auf Umsatz & Artikelgröße, Umsatz, Geschlecht \\
+    \hline
+    Wer zahlt die Rechnung? & Kunde mit Bestellung, zahlender Kunde \\
+    \hline
+  \end{tabular}
+\end{center}
+\caption{Kundenperspektive}
+\label{table:tableKunde}
+\end{table}
+
+\begin{table}[h]
+\textbf{Interne Perspektive}
+\begin{center}
+  \begin{tabular}{ | l | r | }
+    \hline
+    \textbf{Ziel} & \textbf{Kennzahl} \\ \hline
+    Anzahl neuer Artikel pro Jahr & Neue Artikel, Datum\\ \hline
+    Überblick über fehlerhafte Artikel & Fehlerhafte Artikel, Grund, Datum \\
+    \hline
+    Zeit Bestellung bis Auslieferung  & Durchschnittliche Verarbeitungsdauer \\ \hline
+  \end{tabular}
+\end{center}
+\caption{Interne Perspektive}
+\label{table:tableIntern}
+\end{table}
+
+\begin{table}[h]
+\textbf{Entwicklungsperspektive}
+\begin{center}
+  \begin{tabular}{ | l | r | }
+    \hline
+    \textbf{Ziel} & \textbf{Kennzahl} \\ \hline
+    Einkäufe Frau und Mann & Umsatz, Anzahl Artikel (Geschlecht, Alter) \\ \hline
+    Kundenzuwachs nach Zeit & Neukunde, Lebensdauer Kunde \\
+    \hline
+    Wie zahlen die Generationen? & Umsatz nach Alter pro Jahr \\ \hline
+   Vergleich offline/online Einkäufe & Alter, Geschlecht, online Kauf, offline Kauf \\ \hline
+  \end{tabular}
+\end{center}
+\caption{Entwicklungsperspektive}
+\label{table:tableEntwicklung}
+\end{table}
+
+\subsection{Konzeptuelle Modellierung}
+\label{ref:modellierung}
+
+\subsection{Datenverarbeitungsanforderungen}
+\label{ref:businessSicht}
+
+\section{Phase 2: Entwurf des Data Warehouse}
+
+\subsection{Relationale Umsetzung eines MDM-Schemas}
+\label{ref:mdmSchema}
+
+\subsection{Optimierung der Data Cubes}
+\label{ref:optimierung}
+
+\end{document}
